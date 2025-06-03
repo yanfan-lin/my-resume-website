@@ -18,6 +18,8 @@ html {
 body {
     font-family: 'Poppins';
     background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 a {
@@ -91,11 +93,149 @@ nav .right a span {
 }
 
 .aboutme .profile img {
-    width: 350px;
+    /* width: 350px; */
     max-width: 100%;
     height: auto;
     border: 1px solid #ffffff;
     border-radius: 80%;
     padding: 5px;
     display: block;
+}
+
+.skills {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.skills .text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills .cells{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+
+}
+
+.skills .cells .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    gap:  10px;
+}
+
+.skills .cells .cell img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+
+}
+
+.skills .cells .cell span {
+    font-size: 18px;
+}
+
+.edu {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.edu h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.edu .edudetails {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.edu .edudetails .edulist {
+    text-align: left;
+}
+
+
+.edu .edudetails .edulist li {
+    margin-bottom: 20px;
+}
+
+.edu .edudetails .edulist li:last-child {
+    margin-bottom: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;   
+}
+
+.back-to-top {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--link-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 0 20px;
+    }
+
+    nav .right a {
+        font-size: 22px;
+
+    }
+
+    nav .right a:first-child {
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav .right a span {
+        display: none;
+    }
+
+
+    .aboutme {
+        padding: 0 20px;
+    }
+
+    .aboutme .text h2 {
+        font-size: 30px;
+    }
+
+    .skills {
+        padding: 0 20px;
+    }
+
+    .skills .cells .cell span {
+        font-size: 15px;
+    }
+
+
+    .edu {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .edu .edudetails {
+        flex-direction: column;
+    }
+
 }
