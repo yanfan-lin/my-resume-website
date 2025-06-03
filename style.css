@@ -150,27 +150,40 @@ nav .right a span {
     margin-bottom: 100px;
 }
 
+.edu .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .edu h2 {
     text-align: center;
     font-size: 35px;
+    margin-bottom: 40px;
 }
 
-.edu .edudetails {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.edulist.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    background: white;
 }
 
-.edu .edudetails .edulist {
-    text-align: left;
+.edulist .card-body {
+    padding: 25px;
 }
 
-
-.edu .edudetails .edulist li {
-    margin-bottom: 20px;
+.edulist .card-title {
+    font-style: italic;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 8px;
 }
 
-.edu .edudetails .edulist li:last-child {
+.edulist .card-text {
+    color: var(--text-color);
+    font-size: 1rem;
     margin-bottom: 0;
 }
 
@@ -248,13 +261,21 @@ footer {
 
 
     .edu {
-        padding: 0 20px;
+        padding: 40px 15px;
         text-align: center;
+        flex-direction: column;
     }
 
-    .edu .edudetails {
-        flex-direction: column;
-        align-items: center;
+    .edulist .card-body {
+        padding: 18px;
+    }
+
+    .edulist .card-title {
+        font-size: 1.1rem;
+    }
+
+    .edulist .card-text {
+        font-size: 0.95rem;
     }
 
 }
